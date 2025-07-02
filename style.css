@@ -48,8 +48,8 @@ h1 {
 /* Position the front and back sides */
 .flip-card-front, .flip-card-back {
     position: absolute;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     -webkit-backface-visibility: hidden; /* For Safari */
     backface-visibility: hidden;
     border-radius: 15px;
@@ -58,8 +58,8 @@ h1 {
 
 /* Style the front side (the image) */
 .flip-card-front img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
