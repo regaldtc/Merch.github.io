@@ -16,7 +16,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px; /* Space between cards */
+    gap: 10px; /* Space between cards */
     padding: 30px;
 }
 
