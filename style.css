@@ -84,13 +84,13 @@ h1 {
 
 .flip-card-back p {
     font-size: 1rem;
-    line-height: 1;
+    line-height: 2;
     margin: 10px 0;
 
 }    
     
 .flip-card-back p2 {
-    font-size: 5rem;
+    font-size: 8rem;
     margin-top: 0;
     color: #FFFFFF; /* White */
 }
