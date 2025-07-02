@@ -1,0 +1,88 @@
+/* General Body & Layout Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between cards */
+    padding: 20px;
+}
+
+/* The main container for each card */
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+    perspective: 1000px; /* Gives the 3D effect */
+    cursor: pointer;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s; /* Speed of the flip animation */
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+/* The class that gets toggled by JavaScript to perform the flip */
+.flip-card-inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back sides */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* For Safari */
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden; /* Ensures content fits within rounded corners */
+}
+
+/* Style the front side (the image) */
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Style the back side (the text details) */
+.flip-card-back {
+    background-color: #2c3e50; /* A dark background */
+    color: white;
+    transform: rotateY(180deg); /* Start with the back side flipped away */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect the total width/height */
+}
+
+.flip-card-back h3 {
+    margin-top: 0;
+    color: #1abc9c; /* A nice accent color */
+}
+
+.flip-card-back p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px 0;
+}
