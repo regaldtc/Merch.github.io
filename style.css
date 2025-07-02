@@ -16,8 +16,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; /* Space between cards */
-    padding: 20px;
+    gap: 40px; /* Space between cards */
+    padding: 30px;
 }
 
 /* The main container for each card */
@@ -65,7 +65,7 @@ h1 {
 
 /* Style the back side (the text details) */
 .flip-card-back {
-    background-color: #2c3e50; /* A dark background */
+    background-color: #FF6900; /* Orange background */
     color: white;
     transform: rotateY(180deg); /* Start with the back side flipped away */
     display: flex;
@@ -82,7 +82,7 @@ h1 {
 }
 
 .flip-card-back p {
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin: 10px 0;
 }
