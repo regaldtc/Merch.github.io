@@ -23,7 +23,7 @@ h1 {
 /* The main container for each card */
 .flip-card {
     background-color: transparent;
-    width: 400px;
+    width: 300px;
     height: 300px;
     perspective: 1000px; /* Gives the 3D effect */
     cursor: pointer;
@@ -83,6 +83,6 @@ h1 {
 
 .flip-card-back p {
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1;
     margin: 10px 0;
 }
