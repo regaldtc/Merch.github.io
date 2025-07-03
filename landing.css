@@ -20,7 +20,7 @@ body {
 
 /* The Big Title */
 .main-title {
-    font-size: 1rem;
+    font-size: 2rem;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -73,7 +73,7 @@ body {
 }
 
 
-/* --- CUSTOMIZE YOUR BUTTON IMAGES HERE --- */
+/* --- CUSTOMIZE YOUR BUTTONS --- */
 
 
 #button-1 {
