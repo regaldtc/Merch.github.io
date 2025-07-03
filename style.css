@@ -18,6 +18,7 @@ h1 {
     justify-content: center;
     gap: 10px; /* Space between cards */
     padding: 30px;
+    border: 3px solid red;
 }
 
 /* The main container for each card */
