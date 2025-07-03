@@ -38,7 +38,6 @@ h1 {
     cursor: pointer;
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
     position: relative;
     width: 80%;
@@ -47,7 +46,8 @@ h1 {
     transition: transform 0.8s; /* Speed of the flip animation */
     transform-style: preserve-3d;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border: 3px solid black;
+    border: 3px;
+    border-color: #FF6900;
     border-radius: 18px;
     
 }
@@ -98,7 +98,7 @@ h1 {
 .flip-card-back p {
     font-size: 2rem;
     margin-top: 0;
-    color: #000000; 
+    color: #ffffff; 
 }
 
 .flip-card-back p2 {
