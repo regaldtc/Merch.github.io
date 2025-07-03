@@ -1,0 +1,93 @@
+/* General Body Styles */
+body {
+    background-color: #1a1a1a; /* Dark background */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Container for all content */
+.landing-container {
+    width: 100%;
+    max-width: 1200px; /* Limits width on very large screens */
+    text-align: center;
+}
+
+/* The Big Title */
+.main-title {
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Grid container for the buttons */
+.button-grid {
+    display: grid;
+    /* On large screens: 2 columns. On smaller screens: 1 column. */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* --- Main Button Styling --- */
+.image-button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Aligns text to the bottom */
+    
+    height: 250px;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden; /* Important for the rounded corners */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Hover effect for the buttons */
+.image-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Text inside the button */
+.button-text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Semi-transparent background for readability over any image */
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+}
+
+
+/* --- CUSTOMIZE YOUR BUTTON IMAGES HERE --- */
+
+/* Use a local path like 'merch/merch.jpg' or a URL */
+#button-1 {
+    background-image: url('Merch/bogo_b.jpg');
+}
+
+#button-2 {
+    background-image: url('Merch/50_b.jpg');
+}
+
+#button-3 {
+    background-image: url('Merch/Free_w_c_b.jpg');
+}
+
+#button-4 {
+    background-image: url('Merch/New_Up_b.jpg');
+}

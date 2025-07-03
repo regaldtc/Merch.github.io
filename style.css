@@ -9,16 +9,24 @@ body {
 }
 
 h1 {
-    color: #2c3e50;
+    font-size: 3rem;
+    color: #000000;
+}
+
+.main-content-wrapper {
+  width: 100%;
+  max-width: 1200px; /* Ensures there's plenty of space on large screens */
+  margin: 0 auto; /* Centers the wrapper */
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
 }
 
 .gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px; /* Space between cards */
-    padding: 30px;
-    border: 3px solid red;
+  display: grid; /* This is the key property for a multi-row/column layout. */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates responsive columns that wrap automatically. */
+  justify-items: center; 
+  gap: 20px;
+  padding: 30px;
 }
 
 /* The main container for each card */
@@ -26,19 +34,22 @@ h1 {
     background-color: transparent;
     width: 300px;
     height: 300px;
-    perspective: 1000px; /* Gives the 3D effect */
+    perspective: 1200px; /* Gives the 3D effect */
     cursor: pointer;
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
     position: relative;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
+    border-radius: 8px; 
     transition: transform 0.8s; /* Speed of the flip animation */
     transform-style: preserve-3d;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
+    border: 3px solid black;
+    border-radius: 18px;
+    
 }
 
 /* The class that gets toggled by JavaScript to perform the flip */
@@ -61,7 +72,7 @@ h1 {
 .flip-card-front img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-fit:cover; /* Ensures the image covers the area without distortion */
 }
 
 /* Style the back side (the text details) */
@@ -80,18 +91,24 @@ h1 {
 .flip-card-back h3 {
     font-size: 2rem;
     margin-top: 0;
-    color: #1abc9c; /* A nice accent color */
+    color: #ffffff;
 }
 
-.flip-card-back p {
-    font-size: 1rem;
-    line-height: 2;
-    margin: 10px 0;
-
-}    
     
-.flip-card-back p2 {
-    font-size: 8rem;
+.flip-card-back p {
+    font-size: 2rem;
     margin-top: 0;
-    color: #FFFFFF; /* White */
+    color: #000000; 
+}
+
+.flip-card-back p2 {
+    font-size: 1rem;
+    margin-top: 0;
+    color: #d9ff00; 
+}
+
+.flip-card-back h2 {
+    font-size: 7rem;
+    margin-top: 1;
+    color: #ffffff; 
 }
