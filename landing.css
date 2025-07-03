@@ -20,7 +20,7 @@ body {
 
 /* The Big Title */
 .main-title {
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -75,7 +75,7 @@ body {
 
 /* --- CUSTOMIZE YOUR BUTTON IMAGES HERE --- */
 
-/* Use a local path like 'merch/merch.jpg' or a URL */
+
 #button-1 {
     background-image: url('Merch/bogo_b.jpg');
 }
