@@ -9,24 +9,37 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
-    color: #ffffff;
+    font-size: 4rem;
+    color: #FF6900;
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #f2d4d4;
+    
 }
 
 .main-content-wrapper {
   width: 100%;
-  max-width: 1200px; /* Ensures there's plenty of space on large screens */
-  margin: 0 auto; /* Centers the wrapper */
+  max-width: 1200px; 
+  margin: 0 auto;
   padding: 20px;
-  box-sizing: border-box; /* Ensures padding is included in the width */
+  box-sizing: border-box;
 }
 
 .gallery-container {
-  display: grid; /* This is the key property for a multi-row/column layout. */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates responsive columns that wrap automatically. */
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   justify-items: center; 
   gap: 20px;
   padding: 30px;
+}
+
+/* Hover effect for the buttons */
+.flip-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
 }
 
 /* The main container for each card */
@@ -46,7 +59,7 @@ h1 {
     transition: transform 0.8s; /* Speed of the flip animation */
     transform-style: preserve-3d;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border: 3px solid orange;
+    border: 3px solid #b9924b;
     border-radius: 18px;
     
 }
@@ -68,7 +81,14 @@ h1 {
 }
 
 /* Style the front side (the image) */
-.flip-card-front img {
+.flip-card-front,  img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Style the back side (the image) */
+.flip-card-back img {
     width: 100%;
     height: 100%;
     object-fit:cover; /* Ensures the image covers the area without distortion */
@@ -83,7 +103,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0px;
     box-sizing: border-box; /* Ensures padding doesn't affect the total width/height */
 }
 
@@ -110,4 +130,22 @@ h1 {
     font-size: 7rem;
     margin-top: 1;
     color: #ffffff; 
+}
+
+.back-button {
+    display: inline-block; /* Allows padding and margins */
+    padding: 10px 20px;
+    margin: 20px; /* Gives it space from the corner */
+    background-color: #FF6900; /* Same orange as your flip card */
+    color: white;
+    text-decoration: none; /* Removes the underline from the link */
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Change color on hover for a nice effect */
+.back-button:hover {
+    background-color: #e65c00;
 }
